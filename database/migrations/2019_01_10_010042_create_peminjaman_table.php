@@ -25,6 +25,7 @@ class CreatePeminjamanTable extends Migration
             $table->date('tgl_pinjam');
             $table->date('tgl_kembali');
             $table->string('status', 20);
+            $table->boolean('jenis');
             $table->timestamps();
         });
     }
