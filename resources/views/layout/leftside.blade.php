@@ -15,38 +15,8 @@
 
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
-          <li class="active treeview">
-            <a href="#">
-              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-              <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-            </ul>
-          </li>
-          
-          <li class="treeview">
-            <a href="#">
-              <i class="fa fa-edit"></i> <span>Pesan APD</span>
-              <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-            </a>
-            <ul class="treeview-menu">
-              <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Kacamata Pengaman</a></li>
-              <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Pelindung Telinga</a></li>
-              <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Sepatu</a></li>
-              <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Helm</a></li>
-              <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Pakaian Pengaman</a></li>
-              <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Sarung Tangan</a></li>
-              <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Pelindung Wajah</a></li>
-              <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Lainnya</a></li>
-            </ul>
-          </li>
-          
+          <li><a href="index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+          <li><a href="riwayat.html"><i class="fa fa-book"></i> <span>Riwayat Pemesanan</span></a></li>
         </ul>
       </section>
       <!-- /.sidebar -->

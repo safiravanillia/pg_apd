@@ -15,6 +15,18 @@
 //    return view('welcome');
 //});
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/riwayat', function () {
+    return view('riwayat');
+});
+
+Route::get('/kategori', function () {
+    return view('kategori');
+});
+
+Route::get('/pesan-apd', function () {
+    return view('pesan-apd');
 });

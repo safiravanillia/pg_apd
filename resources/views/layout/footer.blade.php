@@ -5,5 +5,3 @@
       </div>
       <strong>Copyright &copy; 2019 <b>Informatika ITS</b>.</strong> All rights reserved.
     </footer>
-  </div>
-  <!-- ./wrapper -->

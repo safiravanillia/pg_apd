@@ -43,23 +43,29 @@
 
 <body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
+
     @include('layout.header')
     @include('layout.leftside')
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <section class="content-header">
         <h1>
           Dashboard
-          <small>Silahkan pilih kategori yang dicari</small>
+          <small>Silahkan pilih jenis pemesanan yang dicari</small>
         </h1>
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
           <li class="active">Dashboard</li>
         </ol>
       </section>
-    @include('kategori.maincontent')
-    @include('layout.footer')  
+
+      @include('dashboard.maincontent')
+    </div>
+    @include('layout.footer')
+  </div>
+  <!-- ./wrapper -->
 
   <!-- jQuery 3 -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
