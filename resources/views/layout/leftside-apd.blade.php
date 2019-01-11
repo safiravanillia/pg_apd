@@ -15,8 +15,8 @@
 
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
-          <li><a href="index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-          <li><a href="kategori1.html"><i class="fa fa-bar-chart"></i> <span>Kategori</span></a></li>
+          <li><a href="{{URL::route('dashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+          <li><a href="{{URL::route('kategori')}}"><i class="fa fa-bar-chart"></i> <span>Kategori</span></a></li>
           <li class="treeview">
             <a href="#">
               <i class="fa fa-edit"></i> <span>Pesan APD</span>
@@ -25,7 +25,7 @@
               </span>
             </a>
             <ul class="treeview-menu">
-              <li><a href="kacamata1.html"><i class="fa fa-circle-o"></i> Kacamata Pengaman</a></li>
+              <li><a href="{{URL::route('pesanApd')}}"><i class="fa fa-circle-o"></i> Kacamata Pengaman</a></li>
               <li><a href="telinga1.html"><i class="fa fa-circle-o"></i> Pelindung Telinga</a></li>
               <li><a href="sepatu1.html"><i class="fa fa-circle-o"></i> Sepatu</a></li>
               <li><a href="helm1.html"><i class="fa fa-circle-o"></i> Helm</a></li>
@@ -36,7 +36,7 @@
             </ul>
           </li>
 
-          <li><a href="riwayat.html"><i class="fa fa-book"></i> <span>Riwayat Pemesanan</span></a></li>
+          <li><a href="{{URL::route('riwayat')}}"><i class="fa fa-book"></i> <span>Riwayat Pemesanan</span></a></li>
         </ul>
       </section>
       <!-- /.sidebar -->

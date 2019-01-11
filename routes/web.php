@@ -11,22 +11,14 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/', function () {
+   return view('welcome');
 });
 
-Route::get('/riwayat', function () {
-    return view('riwayat');
-});
+Route::get('/dashboard', ['as' => 'dashboard', 'uses' => 'leftsideController@dashboard']);
 
-Route::get('/kategori', function () {
-    return view('kategori');
-});
+Route::get('/kategori', ['as' => 'kategori', 'uses' => 'leftsideController@kategori']);
 
-Route::get('/pesan-apd', function () {
-    return view('pesan-apd');
-});
+Route::get('/pesan-apd', ['as' => 'pesanApd', 'uses' => 'leftsideController@pesanApd']);
+
+Route::get('/riwayat', ['as' => 'riwayat', 'uses' => 'leftsideController@riwayat']);

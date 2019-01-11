@@ -16,7 +16,8 @@ class CreateApdTable extends Migration
         Schema::create('apd', function (Blueprint $table) {
             $table->char('kode_apd', 6)->primary();
             $table->string('nama_apd', 20);
-            $table->string('kategori', 20);
+            $table->integer('id_kategori')->unsigned();
+            $table->foreign('id_kategori')->references('id_kategori')->on('kategori')->onDelete('cascade');
             $table->integer('durasi');
             $table->integer('jumlah_stok');
             $table->integer('jumlah_tersedia');

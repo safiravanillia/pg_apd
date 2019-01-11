@@ -12,7 +12,7 @@
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="kacamata1.html" class="small-box-footer">Klik Disini <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{URL::route('pesanApd')}}" class="small-box-footer">Klik Disini <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
