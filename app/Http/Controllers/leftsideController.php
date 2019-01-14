@@ -22,5 +22,16 @@ class leftsideController extends Controller
     	return view('riwayat');
     }
 
+    public function apd(){
+        return view('apd');
+    }
+
+    public function verifPinjam(){
+        return view('verif-pinjam');
+    }
+
+    public function verifKembali(){
+        return view('verif-kembali');
+    }
 
 }

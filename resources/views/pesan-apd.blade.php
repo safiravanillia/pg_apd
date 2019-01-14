@@ -42,8 +42,8 @@
 <body class="hold-transition skin-green sidebar-mini">
   <div class="wrapper">
 
-    @include('layout.header')
-    @include('layout.leftside-apd')
+    @include('karyawan.header')
+    @include('karyawan.leftside-apd')
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">

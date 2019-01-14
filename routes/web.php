@@ -22,3 +22,9 @@ Route::get('/kategori', ['as' => 'kategori', 'uses' => 'leftsideController@kateg
 Route::get('/pesan-apd', ['as' => 'pesanApd', 'uses' => 'leftsideController@pesanApd']);
 
 Route::get('/riwayat', ['as' => 'riwayat', 'uses' => 'leftsideController@riwayat']);
+
+Route::get('/apd', ['as' => 'apd', 'uses' => 'leftsideController@apd']);
+
+Route::get('/verif-pinjam', ['as' => 'verifPinjam', 'uses' => 'leftsideController@verifPinjam']);
+
+Route::get('/verif-kembali', ['as' => 'verifKembali', 'uses' => 'leftsideController@verifKembali']);
