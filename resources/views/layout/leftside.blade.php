@@ -16,7 +16,7 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li><a href="{{URL::route('dashboard')}}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-          <li><a href="{{URL::route('riwayat')}}"><i class="fa fa-book"></i> <span>Riwayat Pemesanan</span></a></li>
+          <li><a href="{{URL::route('riwayat')}}"><i class="fa fa-book"></i> <span>Riwayat Peminjaman</span></a></li>
         </ul>
       </section>
       <!-- /.sidebar -->

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pemesanan APD PT Petrokimia Gresik</title>
+  <title>Peminjaman APD PT Petrokimia Gresik</title>
   <link rel="shortcut icon" href="assets/thumbnail.jpg">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -41,11 +41,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-green sidebar-mini">
   <div class="wrapper">
 
     @include('layout.header')
-    @include('layout.leftside-apd')    
+    @include('layout.leftside-apd')
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -56,13 +56,14 @@
           <small>Silahkan pilih kategori yang dicari</small>
         </h1>
         <ol class="breadcrumb">
-          <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="{{URL::route('dashboard')}}"><i class="fa fa-dashboard"></i> Home</a></li>
           <li>Dashboard</li>
           <li class="active">Kategori</li>
         </ol>
       </section>
 
-      @include('kategori.maincontent')
+      @include('karyawan.kategori')
+      <!-- /.content -->
     </div>
     @include('layout.footer')
   </div>
@@ -106,5 +107,4 @@
   <!-- AdminLTE for demo purposes -->
   <script src="dist/js/demo.js"></script>
 </body>
-
 </html>

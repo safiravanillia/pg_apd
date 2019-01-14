@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pemesanan APD PT Petrokimia Gresik</title>
+  <title>Peminjaman APD PT Petrokimia Gresik</title>
   <link rel="shortcut icon" href="assets/thumbnail.jpg">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -16,8 +16,6 @@
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
-  <!-- daterange picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -27,8 +25,6 @@
   <link rel="stylesheet" href="bower_components/morris.js/morris.css">
   <!-- jvectormap -->
   <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
@@ -43,7 +39,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-green sidebar-mini">
   <div class="wrapper">
 
     @include('layout.header')
@@ -57,13 +53,14 @@
           Kacamata Pengaman
         </h1>
         <ol class="breadcrumb">
-          <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li><a href="{{URL::route('dashboard')}}"><i class="fa fa-dashboard"></i> Home</a></li>
           <li><a href="#">Pesan APD</a></li>
           <li class="active">Kacamata Pengaman</li>
         </ol>
       </section>
 
-      @include('personal.maincontent')
+      @include('karyawan.apd-personal')
+      <!-- /.content -->
     </div>
     @include('layout.footer')
   </div>
@@ -89,11 +86,6 @@
   <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
   <!-- jQuery Knob Chart -->
   <script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
-  <!-- daterangepicker -->
-  <script src="bower_components/moment/min/moment.min.js"></script>
-  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-  <!-- datepicker -->
-  <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
   <!-- Bootstrap WYSIHTML5 -->
   <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
   <!-- DataTables -->
@@ -121,8 +113,6 @@
 
   <script>
     $(function () {
-
-
       $('#example1').DataTable()
       $('#example2').DataTable({
         'paging': true,
@@ -131,41 +121,6 @@
         'ordering': true,
         'info': true,
         'autoWidth': false
-      })
-
-      //Datemask dd/mm/yyyy
-      $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
-      //Datemask2 mm/dd/yyyy
-      $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
-      //Money Euro
-      $('[data-mask]').inputmask()
-
-      //Date range picker
-      $('#reservation').daterangepicker()
-      //Date range picker with time picker
-      $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
-      //Date range as a button
-      $('#daterange-btn').daterangepicker(
-        {
-          ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-          },
-          startDate: moment().subtract(29, 'days'),
-          endDate: moment()
-        },
-        function (start, end) {
-          $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
-        }
-      )
-
-      //Date picker
-      $('#datepicker').datepicker({
-        autoclose: true
       })
     })
   </script>

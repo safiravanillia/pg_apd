@@ -1,10 +1,10 @@
 <header class="main-header">
       <!-- Logo -->
-      <a href="index.html" class="logo">
+      <a href="{{URL::route('dashboard')}}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><img src="assets/logo-sidebar.png"></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg">Petrokimia Gresik</span>
+        <span class="logo-lg"><b>Peminjaman</b>APD</span>
       </a>
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
@@ -34,7 +34,7 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-right">
-                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    <a href="login.html" class="btn btn-default btn-flat">Keluar</a>
                   </div>
                 </li>
               </ul>

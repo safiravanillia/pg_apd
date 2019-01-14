@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pemesanan APD PT Petrokimia Gresik</title>
+  <title>Peminjaman APD PT Petrokimia Gresik</title>
   <link rel="shortcut icon" href="assets/thumbnail.jpg">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -23,10 +23,6 @@
   <link rel="stylesheet" href="bower_components/morris.js/morris.css">
   <!-- jvectormap -->
   <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
@@ -41,7 +37,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="hold-transition skin-green sidebar-mini">
   <div class="wrapper">
 
     @include('layout.header')
@@ -53,7 +49,7 @@
       <section class="content-header">
         <h1>
           Dashboard
-          <small>Silahkan pilih jenis pemesanan yang dicari</small>
+          <small>Silahkan pilih jenis peminjaman yang dicari</small>
         </h1>
         <ol class="breadcrumb">
           <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -61,7 +57,8 @@
         </ol>
       </section>
 
-      @include('dashboard.maincontent')
+      @include('karyawan.dashboard')
+      <!-- /.content -->
     </div>
     @include('layout.footer')
   </div>
