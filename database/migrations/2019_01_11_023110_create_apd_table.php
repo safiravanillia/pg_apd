@@ -20,6 +20,7 @@ class CreateApdTable extends Migration
             $table->foreign('id_kategori')->references('id_kategori')->on('kategori')->onDelete('cascade');
             $table->integer('durasi');
             $table->integer('jumlah_stok');
+            $table->integer('jumlah_tersedia');
             $table->timestamps();
         });
     }

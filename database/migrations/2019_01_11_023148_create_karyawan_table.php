@@ -17,7 +17,7 @@ class CreateKaryawanTable extends Migration
             $table->char('nik', 7)->primary();
             $table->string('nama_karyawan', 50);
             $table->string('departemen', 50);
-            $table->string('pass', 10);
+            $table->string('pass');
             $table->timestamps();
         });
     }
